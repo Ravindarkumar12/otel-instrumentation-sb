@@ -1,3 +1,7 @@
+spring:
+  application:
+    name: Hello-service
+    version: 1.2
 management:
   endpoints:
     web:
@@ -14,8 +18,9 @@ management:
   tracing:
     sampling:
       probability: 1.0
-otel:
-  resource:
-    attributes:
-      service:
-        name: Hello1-service
+
+#otel:
+#  exporter:
+#    otlp:
+#      spanProcessors: com.example.CustomSpanProcessor
+
